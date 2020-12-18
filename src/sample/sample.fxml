@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+  <tabs>
+    <Tab text="Фигуры">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Canvas fx:id="canvas" height="240.0" layoutX="62.0" layoutY="53.0" width="308.0" />
+                  <ComboBox fx:id="comboBox" layoutX="365.0" layoutY="28.0" prefHeight="26.0" prefWidth="202.0" promptText="Выберите фигуру" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Картинки">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <ImageView fx:id="imageView" fitHeight="271.0" fitWidth="282.0" layoutX="39.0" layoutY="35.0" pickOnBounds="true" preserveRatio="true" />
+                  <ComboBox fx:id="imageBox" layoutX="372.0" layoutY="35.0" prefHeight="34.0" prefWidth="187.0" promptText="выберите картинку" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+    <Tab text="Пейнт">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+               <children>
+                  <Canvas fx:id="paintCanvas" height="347.0" layoutX="7.0" layoutY="11.0" width="480.0" />
+                  <Button fx:id="clean" layoutX="509.0" layoutY="33.0" mnemonicParsing="false" text="clean" />
+               </children></AnchorPane>
+      </content>
+    </Tab>
+  </tabs>
+</TabPane>
